@@ -1,3 +1,5 @@
-public class EstadoPedido {
-    
+public enum EstadoPedido {
+ En_preparacion,
+ Listo_para_entregar,
+ Entregado
 }
