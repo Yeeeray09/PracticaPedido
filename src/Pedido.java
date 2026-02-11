@@ -7,7 +7,7 @@ public class Pedido {
 
     //asignamos las variables y las encapsulamos como el resto del codigo
  private int idPedido;
-  private String nomClie;
+  private String nomCliente;
 
   //creamos el array para guardar el objeto articulo
     private Articulo[] listaArticulos = new Articulo[5];
@@ -19,8 +19,8 @@ public class Pedido {
     private EstadoPedido estado;
 
     //creamos el contructor de pedido y controlamos el numero de pedidos con el contadorId para que se vaya incrementando y no de el mismo
-    public Pedido ( String nomClie){
-        this.nomClie=nomClie;
+    public Pedido ( String nomCliente){
+        this.nomCliente=nomCliente;
         this.idPedido = contadorId;
         contadorId++;
         this.estado=EstadoPedido.En_preparacion;
